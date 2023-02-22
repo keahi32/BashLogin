@@ -15,3 +15,17 @@ echo " "
 echo "-------------------------------"
 sudo apt install git &>/dev/null
 git clone https://github.com/keahi32/login
+echo "-------------------------------"
+echo " "
+echo "Preparando archivos"
+echo " "
+echo "-------------------------------"
+mv /BashLogin/login/* /app
+read -p "Porfavor criatura dame la ip donde importaras la base de datos " manolo
+sed -i "2s/^/$manolo/" /app/config.php
+echo "-------------------------------"
+echo " "
+echo "Docker Configurado"
+echo " "
+echo "-------------------------------"
+
