@@ -10,10 +10,9 @@ echo "-------------------------------"
 sleep 5
 echo "-------------------------------"
 echo " "
-echo "Descargando git"
+echo "Descargando archivos"
 echo " "
 echo "-------------------------------"
-sudo apt install git &>/dev/null
 git clone https://github.com/keahi32/login
 echo "-------------------------------"
 echo " "
