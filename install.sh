@@ -21,7 +21,7 @@ echo " "
 echo "-------------------------------"
 mv /BashLogin/login/* /app
 read -p "Porfavor criatura dame la ip donde importaras la base de datos " manolo
-sed -i "2s/^/$manolo/" /app/config.php
+sed -i '2s/^/$HOST='"$manolo"';/' /app/config.php
 echo "-------------------------------"
 echo " "
 echo "Docker Configurado"
